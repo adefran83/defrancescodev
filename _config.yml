@@ -17,7 +17,7 @@ title: "Anthony DeFrancesco"
 email: 'anthony@defrancesco.dev'
 description: "Software Development, Web Design & Consulting <br/> 10 years experience"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://adefran83.github.io/defrancescodev/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://anthony.defrancesco.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: 'adefran83'
 twitter_username: ''
 medium_username: ''
