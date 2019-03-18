@@ -33,7 +33,7 @@ plugins:
 paginate: 10
 footer_text: '© 2019 Anthony DeFrancesco'
 admin_name: 'Anthony DeFrancesco'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+google_analytics: "UA-136397601-1" # Update with your own tracking ID
 enable_contact: true
 
 #### Phantom Navigation menu
