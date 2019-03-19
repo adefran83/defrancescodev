@@ -1,11 +1,11 @@
 ---
 layout: inner
-position: center
+position: right
 title: 'Services'
 date: 2016-02-20 22:00:00
 categories: development design
 tags:
-featured_image: ''
+featured_image: '/img/code-coder.jpg'
 project_link: ''
 button_text: ''
 button_icon: ''

@@ -99,7 +99,7 @@ input.btn {
 }
 
 .main {
-  background-color: white;
+  background-color:white;
   border-left: solid 1px #cedfea;
   border-right: solid 1px #cedfea;
 
@@ -125,7 +125,7 @@ input.btn {
 	2.0 Home Hero
 --------------------------------------------------------------*/
 .hero-container {
-  margin: 10em 0 9em 0;
+  margin: 10em 0 6em 0;
 
   @include bp-xsmall {
     margin: 5em 0 5em 0;
@@ -299,6 +299,8 @@ input.btn {
   }
 
   img.img-responsive {
+    margin-top:20px;
+    border-radius: 10px;
     @include bp-xsmall {
       display: none;
     }
@@ -319,16 +321,13 @@ input.btn {
       margin-bottom: 1.5em;
 
       &:after {
-        content: '';
-        position: absolute;
-        top: 1.35em;
-        width: 3em;
-        height: 3px;
-        background-color: #ECEFF1;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
+       content: '';
+       position: absolute;
+       top: 1.5em;
+       left: 0;
+       width: 3em;
+       height: 3px;
+       background-color: #ECEFF1;
       }
     }
 
