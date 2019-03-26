@@ -18,21 +18,25 @@
 
         {% for post in paginator.posts %}
         <div class="wow fadeIn">
-          {% if post.position == "left" %}
-          {% include content-left.html %}
-          {% endif %}
+          {% if post.quote == false %}
+            {% if post.position == "left" %}
+              {% include content-left.html %}
+            {% endif %}
 
-          {% if post.position == "right" %}
-          {% include content-right.html %}
-          {% endif %}
+            {% if post.position == "right" %}
+              {% include content-right.html %}
+            {% endif %}
 
-          {% if post.position == "center" %}
-          {% include content-center.html %}
+            {% if post.position == "center" %}
+              {% include content-center.html %}
+            {% endif %}
           {% endif %}
-        </div>
+          </div>
         {% endfor %}
 
-        {% include pagination.html %}
+      <div class="wow fadeIn">
+        {% include quotes.html %}
+      </div>
 
       </div>
     </div>

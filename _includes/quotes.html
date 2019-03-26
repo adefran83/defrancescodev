@@ -1,0 +1,13 @@
+<div class="content-wrap">
+    <div class="content">
+    <h3 class="title">Testimonials</h3>
+
+    {% for post in paginator.posts %}
+    <div class="wow fadeIn">
+        {% if post.quote == true %}
+        {% include content-quote.html %}
+        {% endif %}
+    </div>
+    {% endfor %}
+    </div>
+</div>

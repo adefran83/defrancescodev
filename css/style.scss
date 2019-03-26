@@ -265,7 +265,7 @@ input.btn {
     top: 1.35em;
     width: 3em;
     height: 3px;
-    background-color: #ECEFF1;
+    background-color: #eda619;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -327,7 +327,7 @@ input.btn {
        left: 0;
        width: 3em;
        height: 3px;
-       background-color: #ECEFF1;
+       background-color: #eda619;
       }
     }
 
@@ -338,6 +338,16 @@ input.btn {
       @include bp-xsmall {
         width: 100%;
       }
+    }
+
+      .quote {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+
+        @include bp-xsmall {
+          width: 100%;
+        }
     }
 
     button {
@@ -811,3 +821,11 @@ pre>code {
 }
 
 /* Literal.Number.Integer.Long */
+.orange {
+  color: #eda619;
+}
+
+a {
+  color:#eda619;
+  cursor: pointer;
+}
