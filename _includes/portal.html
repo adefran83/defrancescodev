@@ -34,7 +34,7 @@
                     'Authorization': `Bearer ${key}`
                 },
                 body: formBody
-            }).then(r => console.log(r));
+            }).then(r => window.location(r.url));
         };
     </script>
 </body>
