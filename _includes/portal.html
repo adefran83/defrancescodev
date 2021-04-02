@@ -28,7 +28,7 @@
                     'Content-Type':'application/x-www-form-urlencoded',
                     'Authorization':`Bearer ${key}`
                 },
-                body: JSON.stringify(body)
+                body: body
             });
             return response.json();
         }
