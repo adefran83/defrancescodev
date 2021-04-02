@@ -8,6 +8,12 @@
 <body>
     <script>
         window.onload = async (event) => {
+            getPortalURL((data)=>{
+                console.log(data)
+            });
+        };
+
+        async function getPortalURL(callback){
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const cust = urlParams.get('cust');
@@ -33,11 +39,11 @@
                 },
                 body: formBody
             }).then(response => {
-                response.json()
+                response.json();
                 // window.location.href = r.url
             }).then(data => {
-                console.log(data)
-            })
+                callback(data);
+            });
         };
     </script>
 </body>
