@@ -39,7 +39,7 @@
                 },
                 body: formBody
             }).then(response => {
-                response.json()
+                response.json().then(res => console.log(res));
                 // console.log(response)
                 // window.location.href = r.url
             }).then(data => {
