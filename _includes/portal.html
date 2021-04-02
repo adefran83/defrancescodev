@@ -24,7 +24,7 @@
         async function getInfo(key = '', cust = '') {
             const url = 'https://api.stripe.com/v1/billing_portal/sessions';
             const body = {
-                'customer': 'cust'
+                'customer': `${cust}`
             }
             var formBody = [];
             for (var property in body) {
