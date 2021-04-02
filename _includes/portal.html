@@ -32,10 +32,12 @@
                     'Accept': 'application/json'
                 },
                 body: formBody
-            }).then(r => {
-                console.log(r)
+            }).then(response => {
+                response.json()
                 // window.location.href = r.url
-            });
+            }).then(data => {
+                console.log(data)
+            })
         };
     </script>
 </body>
