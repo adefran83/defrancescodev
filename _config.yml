@@ -31,7 +31,7 @@ plugins:
 
 ### Phantom settings
 paginate: 10
-footer_text: '© 2019 Anthony DeFrancesco'
+footer_text: '© 2021 Anthony DeFrancesco'
 admin_name: 'Anthony DeFrancesco'
 google_analytics: "UA-136397601-1" # Update with your own tracking ID
 enable_contact: true
