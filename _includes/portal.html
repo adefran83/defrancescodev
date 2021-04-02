@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
 </head>
+
 <body>
     <script>
         window.onload = (event) => {
@@ -12,26 +14,36 @@
             const cust = urlParams.get('cust');
             console.log('customer', cust);
             const key = urlParams.get('key');
-            console.log('key',key)
-            
-            console.log(getInfo(key,cust))
-            
+            console.log('key', key)
+
+            console.log(getInfo(key, cust))
+
 
         };
 
-        async function getInfo(key='',cust=''){
+        async function getInfo(key = '', cust = '') {
             const url = 'https://api.stripe.com/v1/billing_portal/sessions';
-            const body = {customer:cust}
+            const body = {
+                'customer': 'cust'
+            }
+            var formBody = [];
+            for (var property in body) {
+                var encodedKey = encodeURIComponent(property);
+                var encodedValue = encodeURIComponent(details[property]);
+                formBody.push(encodedKey + "=" + encodedValue);
+            }
+            formBody = formBody.join("&");
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                    'Content-Type':'application/x-www-form-urlencoded',
-                    'Authorization':`Bearer ${key}`
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'Authorization': `Bearer ${key}`
                 },
-                body: body
+                body: formBody
             });
             return response.json();
         }
     </script>
 </body>
+
 </html>
