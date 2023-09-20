@@ -21,7 +21,7 @@ url: "https://anthony.defrancesco.dev/" # the base hostname & protocol for your 
 github_username: 'adefran83'
 twitter_username: ''
 medium_username: ''
-facebook_username: 'defrancescodevelopment'
+facebook_username: ''
 
 # Build settings
 markdown: kramdown
